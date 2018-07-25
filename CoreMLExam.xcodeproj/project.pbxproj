@@ -14,6 +14,8 @@
 		7DDB4684210893290055B02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB4682210893290055B02E /* LaunchScreen.storyboard */; };
 		7DDB468F210893290055B02E /* CoreMLExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB468E210893290055B02E /* CoreMLExamTests.swift */; };
 		7DDB469A210893290055B02E /* CoreMLExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB4699210893290055B02E /* CoreMLExamUITests.swift */; };
+		7DDB46A82108B0DE0055B02E /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB46A72108B0DE0055B02E /* MobileNet.mlmodel */; };
+		7DDB46AA2108BC190055B02E /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB46A92108BC190055B02E /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		7DDB4695210893290055B02E /* CoreMLExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDB4699210893290055B02E /* CoreMLExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLExamUITests.swift; sourceTree = "<group>"; };
 		7DDB469B210893290055B02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DDB46A72108B0DE0055B02E /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = SOURCE_ROOT; };
+		7DDB46A92108BC190055B02E /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		7DDB4678210893260055B02E /* CoreMLExam */ = {
 			isa = PBXGroup;
 			children = (
+				7DDB46A72108B0DE0055B02E /* MobileNet.mlmodel */,
 				7DDB4679210893260055B02E /* AppDelegate.swift */,
 				7DDB467B210893260055B02E /* ViewController.swift */,
+				7DDB46A92108BC190055B02E /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				7DDB467D210893260055B02E /* Main.storyboard */,
 				7DDB4680210893290055B02E /* Assets.xcassets */,
 				7DDB4682210893290055B02E /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDB46AA2108BC190055B02E /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				7DDB467C210893260055B02E /* ViewController.swift in Sources */,
 				7DDB467A210893260055B02E /* AppDelegate.swift in Sources */,
+				7DDB46A82108B0DE0055B02E /* MobileNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
