@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nfV-lW-c1m">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -63,12 +63,24 @@
                         <viewLayoutGuide key="safeArea" id="ERw-9i-yg8"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="CAMERA" id="H71-3P-HCH" userLabel="Camera"/>
+                        <barButtonItem title="CAMERA" id="H71-3P-HCH" userLabel="Camera">
+                            <connections>
+                                <action selector="openCamera:" destination="j9e-j6-Eim" id="vG7-Zd-hQe"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Gmq-B3-HB2"/>
-                        <barButtonItem title="ALBUM" id="r34-Z5-gQ9" userLabel="Album"/>
+                        <barButtonItem title="ALBUM" id="r34-Z5-gQ9" userLabel="Album">
+                            <connections>
+                                <action selector="openAlbum:" destination="j9e-j6-Eim" id="pf6-v3-qzf"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="VISON" id="6R6-Ck-Io8"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="JmS-zF-2Ul" id="QO6-Is-dHv"/>
+                        <outlet property="predictLabel" destination="hS3-jw-p2R" id="DyV-Ss-vIF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVk-UW-BZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

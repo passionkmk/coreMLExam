@@ -8,18 +8,37 @@
 
 import UIKit
 
+// MARK: - Overrides
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var predictLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
+}
 
+// MARK: - Actions
+extension ViewController {
+    @IBAction func openCamera(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    @IBAction func openAlbum(_ sender: UIBarButtonItem) {
+        
+    }
+}
 
+// MARK: - Functions
+extension ViewController {
+    
 }
 
